@@ -6,7 +6,7 @@ class Drift:
 
     @event("OnPlayerDriftStart")
     def on_start(cls, player_id: int) -> None:
-        return (Player(player_id))
+        return (Player(player_id), )
 
     @event("OnPlayerDriftUpdate")
     def on_update(cls, player_id: int, value: int, combo: int, flag_id: int, distance: float, speed: float) -> None:
